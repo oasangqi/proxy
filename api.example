@@ -1,0 +1,15 @@
+
+查看指定后台服务器的连接信息
+curl http://192.168.187.111:8080/proxy/online/vid?vid=2104&
+
+查看所有后台服务器的连接信息
+curl http://192.168.187.111:8080/proxy/online/vid?vid=2104&
+
+新增后台服务器
+curl http://192.168.187.111:8080/proxy/online/add -X POST -d '{"name":"汉寿","addr":"120.26.234.124:20316","vid":2104}'
+
+查看指定客户端IP的数据流
+curl  "http://192.168.187.111:8080/proxy/whitelist/add?ips=192.168.187.111&"
+
+关闭查看数据流
+curl  "http://192.168.187.111:8080/proxy/whitelist/clear?"

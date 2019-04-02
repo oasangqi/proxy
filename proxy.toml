@@ -1,0 +1,62 @@
+#日志刷新频率
+interval = "30s"
+pidfile = "proxy.pid"
+
+[http]
+	addr = ":8080"
+	logdir = "logs"
+	#是否开启http服务
+	open = true
+
+[websocket]
+	#地址可配多个
+	addrs = [":8888", ":8889"]
+	#是否开启WSS
+	tlsopen = true
+	tlsaddrs = [":10000", ":10001"]
+	#证书支持多套，证书私钥必须按顺序对应
+	certfile = "full_chain.pem"
+	privatefile = "private.key"
+	handshaketimeout = "10s"
+	debug = true
+
+[buffer]
+	timer = 4
+	timersize = 1024
+	#读池个数
+	reader = 4
+	#每个读池中元素个数
+	readerbuf = 1024
+	#读池中元素大小
+	readerbufsize = 16384
+	writer = 4
+	writerbuf = 1024
+	writerbufsize = 16384
+
+#房间数据库
+[redis]
+	network = "tcp"
+	addr = "127.0.0.1:20003"
+	auth = "test@1122"
+	active = 60000
+	idle = 1024
+	dialTimeout = "200ms"
+	readTimeout = "500ms"
+	writeTimeout = "500ms"
+	idleTimeout = "120s"
+
+#后台服务器配置，可通过http接口动态添加
+[servers]
+	[servers.2104]
+	vid = 2104
+	name = "汉寿跑胡子"
+	addr = "127.0.0.1:20316"
+	[servers.2101]
+	vid = 2101
+	name = "全名堂"
+	addr = "127.0.0.1:20313"
+	[servers.3802]
+	vid = 3802
+	name = "长沙跑胡子"
+	addr = "127.0.0.1:20337"
+
