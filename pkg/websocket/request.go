@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"proxy/pkg/bufio"
+	"github.com/oasangqi/proxy/pkg/bufio"
 )
 
 // Request request.

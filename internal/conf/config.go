@@ -2,7 +2,7 @@ package conf
 
 import (
 	"github.com/BurntSushi/toml"
-	xtime "proxy/pkg/time"
+	xtime "github.com/oasangqi/proxy/pkg/time"
 	"time"
 )
 

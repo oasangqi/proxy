@@ -1,9 +1,9 @@
 package http
 
 import (
+	"github.com/oasangqi/proxy/internal"
+	"github.com/oasangqi/proxy/internal/conf"
 	"net/http"
-	"proxy/internal"
-	"proxy/internal/conf"
 
 	"github.com/gin-gonic/gin"
 )

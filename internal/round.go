@@ -1,9 +1,9 @@
 package proxy
 
 import (
-	"proxy/internal/conf"
-	"proxy/pkg/bytes"
-	"proxy/pkg/time"
+	"github.com/oasangqi/proxy/internal/conf"
+	"github.com/oasangqi/proxy/pkg/bytes"
+	"github.com/oasangqi/proxy/pkg/time"
 )
 
 // RoundOptions round options.

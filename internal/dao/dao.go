@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/gomodule/redigo/redis"
-	"proxy/internal/conf"
+	"github.com/oasangqi/proxy/internal/conf"
 )
 
 // Dao dao.

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"proxy/internal/conf"
+	"github.com/oasangqi/proxy/internal/conf"
 )
 
 type Online struct {

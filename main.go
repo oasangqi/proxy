@@ -3,11 +3,11 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/oasangqi/proxy/internal"
+	"github.com/oasangqi/proxy/internal/conf"
+	"github.com/oasangqi/proxy/internal/http"
 	"os"
 	"os/signal"
-	"proxy/internal"
-	"proxy/internal/conf"
-	"proxy/internal/http"
 	"syscall"
 
 	"github.com/golang/glog"

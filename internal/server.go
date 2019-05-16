@@ -1,8 +1,8 @@
 package proxy
 
 import (
-	"proxy/internal/conf"
-	"proxy/internal/dao"
+	"github.com/oasangqi/proxy/internal/conf"
+	"github.com/oasangqi/proxy/internal/dao"
 	"sync"
 	"time"
 

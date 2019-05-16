@@ -3,9 +3,9 @@ package conn
 import (
 	"encoding/binary"
 	"errors"
+	"github.com/oasangqi/proxy/pkg/bufio"
+	"github.com/oasangqi/proxy/pkg/bytes"
 	"net"
-	"proxy/pkg/bufio"
-	"proxy/pkg/bytes"
 )
 
 type TCPConn struct {

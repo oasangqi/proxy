@@ -36,7 +36,7 @@ pidfile = "proxy.pid"
 #房间数据库
 [redis]
 	network = "tcp"
-	addr = "127.0.0.1:20003"
+	addr = "120.26.212.214:20003"
 	auth = "test@1122"
 	active = 60000
 	idle = 1024
@@ -50,13 +50,13 @@ pidfile = "proxy.pid"
 	[servers.2104]
 	vid = 2104
 	name = "汉寿跑胡子"
-	addr = "127.0.0.1:20316"
+	addr = "120.26.234.124:20316"
 	[servers.2101]
 	vid = 2101
 	name = "全名堂"
-	addr = "127.0.0.1:20313"
+	addr = "120.26.234.124:20313"
 	[servers.3802]
 	vid = 3802
 	name = "长沙跑胡子"
-	addr = "127.0.0.1:20337"
+	addr = "120.26.234.124:20337"
 

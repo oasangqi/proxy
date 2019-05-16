@@ -7,7 +7,7 @@ import (
 	"io"
 	"net"
 
-	"proxy/pkg/bufio"
+	"github.com/oasangqi/proxy/pkg/bufio"
 )
 
 const (

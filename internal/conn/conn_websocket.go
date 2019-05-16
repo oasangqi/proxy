@@ -3,10 +3,10 @@ package conn
 import (
 	"errors"
 	"fmt"
+	"github.com/oasangqi/proxy/pkg/bufio"
+	"github.com/oasangqi/proxy/pkg/bytes"
+	"github.com/oasangqi/proxy/pkg/websocket"
 	"net"
-	"proxy/pkg/bufio"
-	"proxy/pkg/bytes"
-	"proxy/pkg/websocket"
 
 	"github.com/golang/glog"
 )
